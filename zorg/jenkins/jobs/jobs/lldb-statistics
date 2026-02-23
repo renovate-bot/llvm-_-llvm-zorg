@@ -50,6 +50,7 @@ pipeline {
             }
             steps {
                 sh '''
+                arch
                 sw_vers
                 xcodebuild -version
                 cmake --version
