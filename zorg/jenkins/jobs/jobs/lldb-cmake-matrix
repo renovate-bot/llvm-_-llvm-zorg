@@ -138,7 +138,6 @@ pipeline {
                       --dotest-flag="llgs" \
                       --dotest-flag="--skip-category" \
                       --dotest-flag="debugserver" \
-                      --dotest-flag="--skip-category lldb-dap" \
                       --dotest-flag="--dwarf-version=2"
 
                     # Give the system some time to recover.
@@ -175,7 +174,6 @@ pipeline {
 		      --dotest-flag="llgs" \
 		      --dotest-flag="--skip-category" \
 		      --dotest-flag="debugserver" \
-                      --dotest-flag="--skip-category lldb-dap" \
                       --dotest-flag="--dwarf-version=4"
 
                     # Give the system some time to recover.
@@ -212,7 +210,6 @@ pipeline {
 		      --dotest-flag="llgs" \
 		      --dotest-flag="--skip-category" \
 		      --dotest-flag="debugserver" \
-                      --dotest-flag="--skip-category lldb-dap" \
                       --dotest-flag="--dwarf-version=5"
 
                     # Give the system some time to recover.
@@ -288,7 +285,6 @@ pipeline {
                       --dotest-flag="llgs" \
                       --dotest-flag="--skip-category" \
                       --dotest-flag="debugserver" \
-                      --dotest-flag="--skip-category lldb-dap"
 
                     # Give the system some time to recover.
                     sleep 120
@@ -363,7 +359,6 @@ pipeline {
                       --dotest-flag="llgs" \
                       --dotest-flag="--skip-category" \
                       --dotest-flag="debugserver" \
-                      --dotest-flag="--skip-category lldb-dap"
 
                     # Give the system some time to recover.
                     sleep 120
