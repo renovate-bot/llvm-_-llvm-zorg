@@ -90,7 +90,7 @@ resource "google_project_iam_binding" "vertex_ai_user_binding" {
 
 resource "google_storage_bucket" "bazel_cache_bucket" {
   name     = "llvm-bazel-cache"
-  location = "us-central1-c"
+  location = "us-central1"
 
   uniform_bucket_level_access = true
   public_access_prevention    = "enforced"
@@ -120,7 +120,8 @@ resource "google_storage_bucket_iam_binding" "cache_bucket_binding" {
   ]
 
   depends_on = [
-    google_service_account.bazel_cache_gsa
+    google_service_account.bazel_cache_gsa,
+    google_storage_bucket.bazel_cache_bucket
   ]
 }
 
